@@ -1,1 +1,19 @@
-
+for (int i=0; i<9; i++){
+            if (numero[i]>numero[i+1]){
+                creciente = true;
+            }
+            else if (numero[i]<numero[i+1]){
+                decreciente = true;
+            }
+        }
+        
+        if (creciente == true && decreciente == false){
+            System.out.println("Creciente");
+        }
+        
+        if (creciente == false && decreciente == true){
+            System.out.println("Decreciente");
+        }
+        if (creciente == false && decreciente == false){
+            System.out.println("Desordenado");
+         }
