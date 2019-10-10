@@ -1,0 +1,15 @@
+ while (i<12){
+            for (int k=0; i<3; k++){
+                numero3[j] = numero[i+k];
+                j++;  
+            }
+            
+            for (int k=0; i<3; k++){
+                numero3[j] = numero2[i+k];
+                j++;  
+            }
+            
+            i +=3;
+        }
+        
+        ///Solo lo imprimimos
