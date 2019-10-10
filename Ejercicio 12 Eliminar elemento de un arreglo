@@ -1,0 +1,14 @@
+        do {
+        System.out.println("Digite una posicion ");
+        posicion = entrada.nextInt();
+        }while(posicion < 1 || posicion > 8);
+        
+        
+        ///Elimando el elemento de la posicion indicada
+        for (int i =posicion; i<9; i++){
+            numero[i] = numero[i+1];
+        }
+        
+        for (int i= 0; i<9; i++){
+            System.out.print(numero[i] + " ");
+        }
