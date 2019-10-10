@@ -1,0 +1,20 @@
+System.out.println("Digite un numero para insertar ");
+        numero_insertar = entrada.nextInt();
+        
+        ///Hace falta ver en que pos de la tabla va ese numero
+        
+        while (numero[iterador_j] < numero_insertar && iterador_j<8){
+            sitio_numero++;
+            iterador_j++;
+        }
+        
+        ///Transladamos una posicion en el arreglo a los elementos a los elementos
+        for (int i=7; i>=sitio_numero; i--){
+            numero[i+1] = numero[i];
+        }
+        numero[sitio_numero] = numero_insertar;
+        
+        for (int i=0; i<8; i++){
+            System.out.print(numero[i]);
+        }
+    }
