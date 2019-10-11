@@ -1,1 +1,32 @@
-
+int conteo_positivos = 0,conteo_negativos = 0,ceros = 0;
+        int suma_positivos = 0, suma_negativos = 0;
+        
+        for (int i=0; i<a.length; i++){
+           
+            if (a[i] > 0){///Significa que el nuemero es positivo
+                suma_positivos+= a[i]; /// Hacemos la suma de todos los positivos
+                conteo_positivos++; ///Aumentamos el contador de positivos
+            }
+            else if (a[i] < 0){///Significa que el numero es negativo
+                suma_negativos += a[i]; ///Hacemos la suma de todos los negativos
+                conteo_negativos++;///Aumentamos el contador de negativos 
+            }
+            else {
+                ceros ++; ///Aumentamos los ceros
+            }
+        }  
+        
+        if (conteo_negativos == 0){ ///Tenemos que asegurarnos que el conteo no sea 0
+            System.out.println("no se puede sacar la media de los negativos");
+            }
+        else { /// Si el conteo no es cero dividimos la suma / conteo
+            System.out.println("La media de los negativos es " + suma_negativos / conteo_negativos);
+        }
+        if (conteo_positivos == 0){ ///Tenemos que asegurarnos que el conteo no sea 0
+            System.out.println("no se puede sacar la media de los positivos");
+            }
+        else { /// Si el conteo no es cero dividimos la suma / conteo
+            System.out.println("La media de los positivos es " +  suma_positivos/conteo_positivos);
+        }
+        System.out.println("La cantidad de zeros es " + ceros); /// Imprimimos la cantidad de zeros
+    }
