@@ -1,15 +1,20 @@
+///Primer forma
+
 int j=9;
         for (int i=0; i<5; i++){
-                System.out.print(numero[i] + " " + numero[j] + " ");
-                j--;
+                System.out.print(numero[i] + " " + numero[j] + " "); ///Aqui creamos una variable j que es incesaria 
+                j--; ///J lo puede remplazar i 
         }
         
+        
+        
+/// Segunda forma        
         System.out.println("\n");
                 
-        for (int i=0; i<5; i++){
+        for (int i=0; i<5; i++){ /// Iteramos solo 5 posiciones 
 
-                System.out.print(numero[i] +" "); 
-                System.out.print(numero[9-i] +" ");
+                System.out.print(numero[i] +" ");  ///Aqui mostramos el primero
+                System.out.print(numero[9-i] +" "); /// Aqui mostramos el ultimo
         }
                 
         }
