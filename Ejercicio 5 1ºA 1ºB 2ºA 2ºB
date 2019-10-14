@@ -1,11 +1,13 @@
-///Mezclar los dos arreglos
-        int j=0;
-        for(int i=0; i<10; i++){
+///Mezclar los dos arreglos y unirlo en un tercer arreglo
+        int j=0; ///La variable j va a controlar la iteracion de la mezcla
+        for(int i=0; i<10; i++){        ///Iteramos hasta 10
 
+            ///La primer posicion del arreglo3 y la primer posicion del arreglo A
             numero3[j] = numero[i];
-            j++;
-            numero3[j] = numero2[i];
-            j++;
+            j++; ///Sumamos uno al arreglo3
+            ///Entonces el arreglo 3 suma 1 y el arreglo B sigue en 0
+            numero3[j] = numero2[i]; ///Asigmanos arreglo3 pos 1 a arreglo 2 pos 0
+            j++;aumentamos la variable del arreglo 3
         }
         for(int i=0; i<20; i++){
             System.out.println(numero3[i]);
