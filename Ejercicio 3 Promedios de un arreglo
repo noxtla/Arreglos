@@ -1,7 +1,8 @@
 int conteo_positivos = 0,conteo_negativos = 0,ceros = 0;
         int suma_positivos = 0, suma_negativos = 0;
+        /// Que se obtiene al dividir la suma de varias cantidades por el número de sumandos. 
         
-        for (int i=0; i<a.length; i++){
+        for (int i=0; i<a.length; i++){ ///Este for recorre todo el arreglo
            
             if (a[i] > 0){///Significa que el nuemero es positivo
                 suma_positivos+= a[i]; /// Hacemos la suma de todos los positivos
@@ -12,7 +13,7 @@ int conteo_positivos = 0,conteo_negativos = 0,ceros = 0;
                 conteo_negativos++;///Aumentamos el contador de negativos 
             }
             else {
-                ceros ++; ///Aumentamos los ceros
+                ceros ++; ///Aumentamos los ceros. No se puede dividir nada entre zero
             }
         }  
         
